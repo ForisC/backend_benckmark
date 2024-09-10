@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  express:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: express-container
+    ports:
+      - "8000:8000"
+  wrk:
+    image: williamyeh/wrk
+    container_name: wrk-container
+    volumes:
+      - ./result:/result
+    entrypoint: /bin/sh
+    command: "-c 'sleep 10 && /usr/local/bin/wrk -t10 -c600 -d30s --latency http://express:8000 > /result/async.txt 2>&1'"
+    depends_on:
+      - express
+    restart: "no"

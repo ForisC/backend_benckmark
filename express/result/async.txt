@@ -1,0 +1,25 @@
+Running 30s test @ http://express:8000
+  10 threads and 600 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   107.27ms   11.92ms 379.90ms   92.42%
+    Req/Sec   560.91     64.53   686.00     87.70%
+  Latency Distribution
+     50%  104.12ms
+     75%  109.12ms
+     90%  115.61ms
+     99%  163.34ms
+  167586 requests in 30.04s, 41.87MB read
+Requests/sec:   5579.53
+Transfer/sec:      1.39MB
+
+
+00:00:03.9208898	CPU: 0.00%	MEM: 16MiB / 7.484GiB
+00:00:08.8733447	CPU: 0.00%	MEM: 13.41MiB / 7.484GiB
+00:00:13.7863331	CPU: 123.46%	MEM: 62.3MiB / 7.484GiB
+00:00:18.7103210	CPU: 103.70%	MEM: 69.62MiB / 7.484GiB
+00:00:23.6286289	CPU: 106.26%	MEM: 67.4MiB / 7.484GiB
+00:00:28.5544946	CPU: 104.56%	MEM: 66.91MiB / 7.484GiB
+00:00:33.4907744	CPU: 101.67%	MEM: 73.11MiB / 7.484GiB
+00:00:38.4220407	CPU: 103.49%	MEM: 67.02MiB / 7.484GiB
+00:00:43.3412134	CPU: 28.32%	MEM: 67.15MiB / 7.484GiB
+
