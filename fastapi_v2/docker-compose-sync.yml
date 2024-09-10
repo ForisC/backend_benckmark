@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: fastapi-v1-container
+    container_name: fastapi-v2-container
     ports:
       - "8000:8000"
     volumes:
@@ -17,7 +17,7 @@ services:
     volumes:
       - ./result:/result
     entrypoint: /bin/sh
-    command: "-c 'sleep 10 && /usr/local/bin/wrk -t10 -c600 -d30s --latency http://fastapi:8000 > /result/async.txt 2>&1'"
+    command: "-c 'sleep 10 && /usr/local/bin/wrk -t10 -c600 -d30s --latency http://fastapi:8000/sync > /result/sync.txt 2>&1'"
     depends_on:
       - fastapi
     restart: "no"

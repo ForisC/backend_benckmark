@@ -1,0 +1,24 @@
+Running 30s test @ http://fastapi:8000
+  10 threads and 600 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   277.87ms   17.24ms 350.13ms   86.02%
+    Req/Sec   218.88    104.03   515.00     65.05%
+  Latency Distribution
+     50%  272.93ms
+     75%  285.36ms
+     90%  298.42ms
+     99%  324.95ms
+  64518 requests in 30.04s, 9.35MB read
+Requests/sec:   2148.05
+Transfer/sec:    318.86KB
+
+
+00:00:03.9400118	CPU: 0.25%	MEM: 24.67MiB / 7.484GiB
+00:00:08.8609077	CPU: 0.23%	MEM: 24.67MiB / 7.484GiB
+00:00:14.5451111	CPU: 100.37%	MEM: 31.51MiB / 7.484GiB
+00:00:19.4706731	CPU: 98.26%	MEM: 31.55MiB / 7.484GiB
+00:00:24.5452612	CPU: 99.79%	MEM: 31.64MiB / 7.484GiB
+00:00:29.4626437	CPU: 100.24%	MEM: 31.53MiB / 7.484GiB
+00:00:34.5506926	CPU: 97.43%	MEM: 31.53MiB / 7.484GiB
+00:00:39.4647316	CPU: 99.79%	MEM: 31.46MiB / 7.484GiB
+
